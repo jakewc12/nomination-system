@@ -121,48 +121,48 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "package.json",
-        "hash": "15810003257695442711"
+        "file": "README.md",
+        "hash": "7542981739487165903"
       },
       {
         "file": "supabase/seed.sql",
         "hash": "3244421341483603138"
       },
       {
-        "file": "yarn.lock",
-        "hash": "16602595035920530759"
+        "file": "package.json",
+        "hash": "17521615896544881777"
       },
       {
-        "file": "supabase/.gitignore",
-        "hash": "11655384966607301079"
+        "file": "vercel.json",
+        "hash": "16233110494981183886"
       },
       {
         "file": "nx.json",
         "hash": "14957606332241917186"
       },
       {
+        "file": "supabase/.gitignore",
+        "hash": "11655384966607301079"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "2755292205460183465"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "16602595035920530759"
+      },
+      {
         "file": "jest.config.ts",
         "hash": "12333515226966617182"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "596896521444264820"
-      },
-      {
-        "file": "README.md",
-        "hash": "7542981739487165903"
-      },
-      {
-        "file": ".nx/cache/d/server-process.json",
-        "hash": "7973220568314708570"
       },
       {
         "file": "supabase/config.toml",
         "hash": "3175116340987229256"
       },
       {
-        "file": ".gitignore",
-        "hash": "2755292205460183465"
+        "file": "tsconfig.base.json",
+        "hash": "596896521444264820"
       },
       {
         "file": "jest.preset.js",
@@ -178,6 +178,14 @@
         {
           "file": "apps/backend/.eslintrc.json",
           "hash": "13800677001662881425"
+        },
+        {
+          "file": "apps/backend/Dockerfile",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/backend/buildspec.yaml",
+          "hash": "9408723149981875376"
         },
         {
           "file": "apps/backend/jest.config.ts",
@@ -412,10 +420,6 @@
             "npm:@nx/webpack",
             "npm:path"
           ]
-        },
-        {
-          "file": "apps/backend/Dockerfile",
-          "hash": "3244421341483603138"
         }
       ],
       "frontend": [
@@ -430,6 +434,10 @@
         {
           "file": "apps/frontend/.eslintrc.json",
           "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/frontend/Dockerfile",
+          "hash": "3244421341483603138"
         },
         {
           "file": "apps/frontend/index.html",
@@ -805,10 +813,6 @@
             "npm:@vitejs/plugin-react",
             "npm:@nx/vite"
           ]
-        },
-        {
-          "file": "apps/frontend/Dockerfile",
-          "hash": "3244421341483603138"
         }
       ]
     }

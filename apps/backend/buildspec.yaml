@@ -1,0 +1,17 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      # Install dependencies for backend
+      cd apps/backend
+      npm install
+  build:
+    commands:
+      # Build your backend application (e.g., if using TypeScript or other build tools)
+      npm run build
+artifacts:
+  base-directory: apps/backend/dist # Path to the build output
+  files:
+    - "**/*"
