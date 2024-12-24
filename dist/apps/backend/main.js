@@ -27,13 +27,12 @@ const app_service_1 = __webpack_require__(6);
 const users_module_1 = __webpack_require__(7);
 const applications_module_1 = __webpack_require__(14);
 const nominations_module_1 = __webpack_require__(19);
-const emails_module_1 = __webpack_require__(25);
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = tslib_1.__decorate([
     (0, common_1.Module)({
-        imports: [users_module_1.UsersModule, applications_module_1.ApplicationsModule, nominations_module_1.NominationsModule, emails_module_1.EmailsModule],
+        imports: [users_module_1.UsersModule, applications_module_1.ApplicationsModule, nominations_module_1.NominationsModule],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })
@@ -906,171 +905,6 @@ tslib_1.__decorate([
     (0, class_validator_1.IsString)(),
     tslib_1.__metadata("design:type", typeof (_a = typeof nominations_types_1.Status !== "undefined" && nominations_types_1.Status) === "function" ? _a : Object)
 ], UpdateNominationRequestDto.prototype, "status", void 0);
-
-
-/***/ }),
-/* 25 */
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.EmailsModule = void 0;
-const tslib_1 = __webpack_require__(4);
-const mailer_1 = __webpack_require__(26);
-const handlebars_adapter_1 = __webpack_require__(27);
-const common_1 = __webpack_require__(1);
-const emails_service_1 = __webpack_require__(28);
-const path_1 = __webpack_require__(29);
-const emails_controller_1 = __webpack_require__(30);
-let EmailsModule = class EmailsModule {
-};
-exports.EmailsModule = EmailsModule;
-exports.EmailsModule = EmailsModule = tslib_1.__decorate([
-    (0, common_1.Module)({
-        imports: [
-            mailer_1.MailerModule.forRoot({
-                transport: {
-                    host: process.env.EMAIL_HOST,
-                    secure: false,
-                    auth: {
-                        user: process.env.EMAIL_USER,
-                        pass: process.env.EMAIL_PASS,
-                    },
-                },
-                defaults: {
-                    from: process.env.EMAIL_FROM,
-                },
-                template: {
-                    dir: (0, path_1.join)(__dirname, 'emails/templates'),
-                    adapter: new handlebars_adapter_1.HandlebarsAdapter(),
-                    options: {
-                        strict: false,
-                    },
-                },
-            }),
-        ],
-        providers: [emails_service_1.EmailsService],
-        controllers: [emails_controller_1.EmailsController],
-        exports: [emails_service_1.EmailsService],
-    })
-], EmailsModule);
-
-
-/***/ }),
-/* 26 */
-/***/ ((module) => {
-
-module.exports = require("@nestjs-modules/mailer");
-
-/***/ }),
-/* 27 */
-/***/ ((module) => {
-
-module.exports = require("@nestjs-modules/mailer/dist/adapters/handlebars.adapter");
-
-/***/ }),
-/* 28 */
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-var _a;
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.EmailsService = void 0;
-const tslib_1 = __webpack_require__(4);
-const common_1 = __webpack_require__(1);
-const mailer_1 = __webpack_require__(26);
-let EmailsService = class EmailsService {
-    constructor(mailerService) {
-        this.mailerService = mailerService;
-    }
-    async createEmail(request) {
-        await this.mailerService.sendMail({
-            to: process.env.EMAIL_USER,
-            from: process.env.EMAIL_FROM,
-            bcc: request.recipients,
-            subject: request.subject,
-            template: './email-template',
-            context: {
-                message: request.message,
-            },
-        });
-    }
-};
-exports.EmailsService = EmailsService;
-exports.EmailsService = EmailsService = tslib_1.__decorate([
-    (0, common_1.Injectable)(),
-    tslib_1.__metadata("design:paramtypes", [typeof (_a = typeof mailer_1.MailerService !== "undefined" && mailer_1.MailerService) === "function" ? _a : Object])
-], EmailsService);
-
-
-/***/ }),
-/* 29 */
-/***/ ((module) => {
-
-module.exports = require("path");
-
-/***/ }),
-/* 30 */
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-var _a, _b;
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.EmailsController = void 0;
-const tslib_1 = __webpack_require__(4);
-const common_1 = __webpack_require__(1);
-const emails_service_1 = __webpack_require__(28);
-const create_email_request_dto_1 = __webpack_require__(31);
-let EmailsController = class EmailsController {
-    constructor(emailsService) {
-        this.emailsService = emailsService;
-    }
-    sendEmail(request) {
-        return this.emailsService.createEmail(request);
-    }
-};
-exports.EmailsController = EmailsController;
-tslib_1.__decorate([
-    (0, common_1.Post)('/send'),
-    tslib_1.__param(0, (0, common_1.Body)()),
-    tslib_1.__metadata("design:type", Function),
-    tslib_1.__metadata("design:paramtypes", [typeof (_b = typeof create_email_request_dto_1.CreateEmailRequestDto !== "undefined" && create_email_request_dto_1.CreateEmailRequestDto) === "function" ? _b : Object]),
-    tslib_1.__metadata("design:returntype", void 0)
-], EmailsController.prototype, "sendEmail", null);
-exports.EmailsController = EmailsController = tslib_1.__decorate([
-    (0, common_1.Controller)('/emails'),
-    tslib_1.__metadata("design:paramtypes", [typeof (_a = typeof emails_service_1.EmailsService !== "undefined" && emails_service_1.EmailsService) === "function" ? _a : Object])
-], EmailsController);
-
-
-/***/ }),
-/* 31 */
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.CreateEmailRequestDto = void 0;
-const tslib_1 = __webpack_require__(4);
-const class_validator_1 = __webpack_require__(13);
-class CreateEmailRequestDto {
-}
-exports.CreateEmailRequestDto = CreateEmailRequestDto;
-tslib_1.__decorate([
-    (0, class_validator_1.IsArray)(),
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsEmail)({}, { each: true }),
-    tslib_1.__metadata("design:type", Array)
-], CreateEmailRequestDto.prototype, "recipients", void 0);
-tslib_1.__decorate([
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsString)(),
-    tslib_1.__metadata("design:type", String)
-], CreateEmailRequestDto.prototype, "message", void 0);
-tslib_1.__decorate([
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.IsString)(),
-    tslib_1.__metadata("design:type", String)
-], CreateEmailRequestDto.prototype, "subject", void 0);
 
 
 /***/ })

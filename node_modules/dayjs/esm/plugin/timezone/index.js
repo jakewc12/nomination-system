@@ -120,22 +120,13 @@ export default (function (o, c, d) {
       timeZone: timezone
     });
     var diff = Math.round((date - new Date(target)) / 1000 / 60);
-    var offset = -Math.round(date.getTimezoneOffset() / 15) * 15 - diff;
-    var isUTC = !Number(offset);
-    var ins;
+    var ins = d(target, {
+      locale: this.$L
+    }).$set(MS, this.$ms).utcOffset(-Math.round(date.getTimezoneOffset() / 15) * 15 - diff, true);
 
-    if (isUTC) {
-      // if utcOffset is 0, turn it to UTC mode
-      ins = this.utcOffset(0, keepLocalTime);
-    } else {
-      ins = d(target, {
-        locale: this.$L
-      }).$set(MS, this.$ms).utcOffset(offset, true);
-
-      if (keepLocalTime) {
-        var newOffset = ins.utcOffset();
-        ins = ins.add(oldOffset - newOffset, MIN);
-      }
+    if (keepLocalTime) {
+      var newOffset = ins.utcOffset();
+      ins = ins.add(oldOffset - newOffset, MIN);
     }
 
     ins.$x.$timezone = timezone;

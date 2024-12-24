@@ -1,0 +1,27 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: apps/frontend/Dockerfile
+    ports:
+      - "4200:80"
+    env_file: 
+      - apps/frontend/.env  # Add this line
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: .
+      dockerfile: apps/backend/Dockerfile
+    ports:
+      - "3000:3000"
+    env_file: 
+      - apps/backend/.env  # Add this line
+    networks:
+      - app-network
+
+networks:
+  app-network:

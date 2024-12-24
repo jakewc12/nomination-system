@@ -1,5 +1,5 @@
 import { u } from '../localizedFormat/utils';
-var formattingTokens = /(\[[^[]*\])|([-_:/.,()\s]+)|(A|a|Q|YYYY|YY?|ww?|MM?M?M?|Do|DD?|hh?|HH?|mm?|ss?|S{1,3}|z|ZZ?)/g;
+var formattingTokens = /(\[[^[]*\])|([-_:/.,()\s]+)|(A|a|YYYY|YY?|MM?M?M?|Do|DD?|hh?|HH?|mm?|ss?|S{1,3}|z|ZZ?)/g;
 var match1 = /\d/; // 0 - 9
 
 var match2 = /\d\d/; // 00 - 99
@@ -74,9 +74,6 @@ var expressions = {
   a: [matchWord, function (input) {
     this.afternoon = meridiemMatch(input, true);
   }],
-  Q: [match1, function (input) {
-    this.month = (input - 1) * 3 + 1;
-  }],
   S: [match1, function (input) {
     this.milliseconds = +input * 100;
   }],
@@ -111,8 +108,6 @@ var expressions = {
       }
     }
   }],
-  w: [match1to2, addInput('week')],
-  ww: [match2, addInput('week')],
   M: [match1to2, addInput('month')],
   MM: [match2, addInput('month')],
   MMM: [matchWord, function (input) {
@@ -214,7 +209,7 @@ function makeParser(format) {
   };
 }
 
-var parseFormattedInput = function parseFormattedInput(input, format, utc, dayjs) {
+var parseFormattedInput = function parseFormattedInput(input, format, utc) {
   try {
     if (['x', 'X'].indexOf(format) > -1) return new Date((format === 'X' ? 1000 : 1) * input);
     var parser = makeParser(format);
@@ -227,8 +222,7 @@ var parseFormattedInput = function parseFormattedInput(input, format, utc, dayjs
         minutes = _parser2.minutes,
         seconds = _parser2.seconds,
         milliseconds = _parser2.milliseconds,
-        zone = _parser2.zone,
-        week = _parser2.week;
+        zone = _parser2.zone;
 
     var now = new Date();
     var d = day || (!year && !month ? now.getDate() : 1);
@@ -252,14 +246,7 @@ var parseFormattedInput = function parseFormattedInput(input, format, utc, dayjs
       return new Date(Date.UTC(y, M, d, h, m, s, ms));
     }
 
-    var newDate;
-    newDate = new Date(y, M, d, h, m, s, ms);
-
-    if (week) {
-      newDate = dayjs(newDate).week(week).toDate();
-    }
-
-    return newDate;
+    return new Date(y, M, d, h, m, s, ms);
   } catch (e) {
     return new Date(''); // Invalid Date
   }
@@ -298,7 +285,7 @@ export default (function (o, C, d) {
         locale = d.Ls[pl];
       }
 
-      this.$d = parseFormattedInput(date, format, utc, d);
+      this.$d = parseFormattedInput(date, format, utc);
       this.init();
       if (pl && pl !== true) this.$L = this.locale(pl).$L; // use != to treat
       // input number 1410715640579 and format string '1410715640579' equal
