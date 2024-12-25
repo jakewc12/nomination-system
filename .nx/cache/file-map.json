@@ -124,56 +124,56 @@
         "hash": "3244421341483603138"
       },
       {
-        "file": "supabase/.gitignore",
-        "hash": "11655384966607301079"
-      },
-      {
-        "file": "nx.json",
-        "hash": "14957606332241917186"
-      },
-      {
-        "file": "package.json",
-        "hash": "1850139116857140775"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "15585229429085418563"
-      },
-      {
-        "file": "README.md",
-        "hash": "7542981739487165903"
-      },
-      {
         "file": "docker-compose.yml",
         "hash": "7142041724054492610"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "596896521444264820"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "3165938494088574830"
-      },
-      {
-        "file": "supabase/config.toml",
-        "hash": "3175116340987229256"
       },
       {
         "file": "jest.preset.js",
         "hash": "9430166341120122740"
       },
       {
-        "file": "vercel.json",
-        "hash": "16233110494981183886"
+        "file": "tsconfig.base.json",
+        "hash": "596896521444264820"
+      },
+      {
+        "file": "supabase/config.toml",
+        "hash": "3175116340987229256"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "supabase/.gitignore",
+        "hash": "11655384966607301079"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "3165938494088574830"
       },
       {
         "file": "yarn.lock",
         "hash": "9051056481812677116"
       },
       {
-        "file": "jest.config.ts",
-        "hash": "12333515226966617182"
+        "file": "package-lock.json",
+        "hash": "15585229429085418563"
+      },
+      {
+        "file": "package.json",
+        "hash": "1850139116857140775"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14957606332241917186"
+      },
+      {
+        "file": "README.md",
+        "hash": "7542981739487165903"
+      },
+      {
+        "file": "vercel.json",
+        "hash": "16233110494981183886"
       }
     ],
     "projectFileMap": {
@@ -192,7 +192,7 @@
         },
         {
           "file": "apps/backend/Dockerfile",
-          "hash": "13964048385126079649"
+          "hash": "13521472825354796055"
         },
         {
           "file": "apps/backend/buildspec.yaml",
@@ -417,7 +417,7 @@
         },
         {
           "file": "apps/frontend/Dockerfile",
-          "hash": "1654116893341961946"
+          "hash": "1875772421183003508"
         },
         {
           "file": "apps/frontend/index.html",

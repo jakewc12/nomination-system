@@ -61,5 +61,26 @@
         "{workspaceRoot}/coverage/apps/backend"
       ]
     }
+  },
+  "3652445258606438277": {
+    "test": {
+      "command": "jest",
+      "options": {
+        "cwd": "apps/backend"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "jest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/backend"
+      ]
+    }
   }
 }
