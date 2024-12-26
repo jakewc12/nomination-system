@@ -1,10 +1,9 @@
 # Stage 1: Build
 FROM node:18 AS build
 WORKDIR /app
-COPY ../package.json ../package-lock.json ./
-RUN npm install --no-audit --prefer-offline
+COPY ../package.json ../yarn.lock ./
+RUN yarn install --no-audit --prefer-offline
 COPY . .
-RUN npm run build
 
 # Stage 2: Serve
 FROM nginx:alpine
