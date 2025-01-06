@@ -3,10 +3,11 @@ services:
     build:
       context: .
       dockerfile: apps/frontend/Dockerfile
+    image: jakewc1212/frontend:latest
     ports:
       - "4200:80"
     env_file: 
-      - apps/frontend/.env  # Add this line
+      - apps/frontend/.env
     depends_on:
       - backend
     networks:
@@ -16,10 +17,11 @@ services:
     build:
       context: .
       dockerfile: apps/backend/Dockerfile
+    image: jakewc1212/backend:latest
     ports:
       - "3000:3000"
     env_file: 
-      - apps/backend/.env  # Add this line
+      - apps/backend/.env
     networks:
       - app-network
 

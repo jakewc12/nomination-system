@@ -13,6 +13,7 @@
     "axios": "^1.6.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.1",
+    "express": "^4.21.2",
     "mdb-react-ui-kit": "^9.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -120,60 +121,96 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "yarn.lock",
-        "hash": "9051056481812677116"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "12333515226966617182"
-      },
-      {
-        "file": "docker-compose.yml",
-        "hash": "7142041724054492610"
-      },
-      {
-        "file": "supabase/seed.sql",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "README.md",
-        "hash": "7542981739487165903"
+        "file": ".nx/cache/d/server-process.json",
+        "hash": "5687500929693569816"
       },
       {
         "file": "package-lock.json",
-        "hash": "15585229429085418563"
+        "hash": "422339385275292376"
+      },
+      {
+        "file": "dist/apps/backend/assets/.gitkeep",
+        "hash": "3244421341483603138"
       },
       {
         "file": "supabase/config.toml",
         "hash": "3175116340987229256"
       },
       {
-        "file": "nx.json",
-        "hash": "14957606332241917186"
+        "file": "dist/apps/frontend/assets/index-CE5fbKZb.js",
+        "hash": "12896007136009009462"
       },
       {
         "file": ".gitignore",
-        "hash": "3165938494088574830"
+        "hash": "13725608138890048625"
+      },
+      {
+        "file": "dist/apps/frontend/index.html",
+        "hash": "6836746682343834124"
+      },
+      {
+        "file": "package.json",
+        "hash": "9196279355506592176"
+      },
+      {
+        "file": "dist/apps/frontend/favicon.ico",
+        "hash": "9303420814833116677"
+      },
+      {
+        "file": "supabase/.gitignore",
+        "hash": "11655384966607301079"
       },
       {
         "file": "tsconfig.base.json",
         "hash": "596896521444264820"
       },
       {
-        "file": "package.json",
-        "hash": "1850139116857140775"
+        "file": "dist/apps/frontend/assets/front-page-C1McrIHZ.jpg",
+        "hash": "14072507614827786677"
       },
       {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14957606332241917186"
+      },
+      {
+        "file": "dist/apps/frontend/logo.ico",
+        "hash": "9199744928180490563"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "15256933677204625888"
       },
       {
         "file": "vercel.json",
         "hash": "16233110494981183886"
       },
       {
-        "file": "supabase/.gitignore",
-        "hash": "11655384966607301079"
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "12863658213540559044"
+      },
+      {
+        "file": "README.md",
+        "hash": "7542981739487165903"
+      },
+      {
+        "file": "dist/apps/backend/main.js",
+        "hash": "13751415512324797253"
+      },
+      {
+        "file": "dist/apps/frontend/assets/senate-logo-BYJFxGZ9.png",
+        "hash": "2516063478936773720"
+      },
+      {
+        "file": "supabase/seed.sql",
+        "hash": "3244421341483603138"
       }
     ],
     "projectFileMap": {
@@ -288,7 +325,7 @@
         },
         {
           "file": "apps/backend/src/main.ts",
-          "hash": "2546540509400009969",
+          "hash": "15652345926366100457",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/core"
