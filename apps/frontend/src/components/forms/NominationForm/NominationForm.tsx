@@ -79,7 +79,7 @@ const NominationForm: React.FC<Props> = ({ setIsPopupOpen, setErrorMessage, setE
       });
   };
   useEffect(() => {
-    getData(getFullPath('/api/nominations/unique-nominees'));
+    getData('https://nomination-system-3yub.onrender.com/api/nominations/unique-nominees');
   }, );
   //getData(getFullPath('/api/nominations'), setNominations);
 
