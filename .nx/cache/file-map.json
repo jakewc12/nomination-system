@@ -121,60 +121,24 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "dist/apps/frontend/assets/index-CE5fbKZb.js",
-        "hash": "12896007136009009462"
+        "file": "supabase/config.toml",
+        "hash": "3175116340987229256"
       },
       {
-        "file": "supabase/seed.sql",
-        "hash": "3244421341483603138"
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
       },
       {
         "file": "nx.json",
         "hash": "14957606332241917186"
       },
       {
-        "file": "package.json",
-        "hash": "12806409510060805799"
-      },
-      {
-        "file": "supabase/config.toml",
-        "hash": "3175116340987229256"
-      },
-      {
         "file": ".gitignore",
         "hash": "13725608138890048625"
       },
       {
-        "file": "yarn.lock",
-        "hash": "12863658213540559044"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "12333515226966617182"
-      },
-      {
-        "file": "supabase/.gitignore",
-        "hash": "11655384966607301079"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "596896521444264820"
-      },
-      {
-        "file": "dist/apps/frontend/assets/senate-logo-BYJFxGZ9.png",
-        "hash": "2516063478936773720"
-      },
-      {
         "file": "docker-compose.yml",
         "hash": "15256933677204625888"
-      },
-      {
-        "file": "dist/apps/frontend/assets/front-page-C1McrIHZ.jpg",
-        "hash": "14072507614827786677"
-      },
-      {
-        "file": "dist/apps/frontend/logo.ico",
-        "hash": "9199744928180490563"
       },
       {
         "file": "package-lock.json",
@@ -185,16 +149,32 @@
         "hash": "16233110494981183886"
       },
       {
+        "file": "dist/apps/frontend/assets/front-page-C1McrIHZ.jpg",
+        "hash": "14072507614827786677"
+      },
+      {
+        "file": "dist/apps/frontend/assets/index-CE5fbKZb.js",
+        "hash": "12896007136009009462"
+      },
+      {
+        "file": "dist/apps/frontend/assets/senate-logo-BYJFxGZ9.png",
+        "hash": "2516063478936773720"
+      },
+      {
         "file": "dist/apps/frontend/index.html",
         "hash": "6836746682343834124"
       },
       {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
+        "file": "supabase/seed.sql",
+        "hash": "3244421341483603138"
       },
       {
-        "file": "dist/apps/backend/assets/.gitkeep",
-        "hash": "3244421341483603138"
+        "file": "supabase/.gitignore",
+        "hash": "11655384966607301079"
+      },
+      {
+        "file": "dist/apps/frontend/logo.ico",
+        "hash": "9199744928180490563"
       },
       {
         "file": "dist/apps/backend/main.js",
@@ -205,8 +185,28 @@
         "hash": "7542981739487165903"
       },
       {
+        "file": "yarn.lock",
+        "hash": "12863658213540559044"
+      },
+      {
         "file": "dist/apps/frontend/favicon.ico",
         "hash": "9303420814833116677"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "596896521444264820"
+      },
+      {
+        "file": "package.json",
+        "hash": "12806409510060805799"
+      },
+      {
+        "file": "dist/apps/backend/assets/.gitkeep",
+        "hash": "3244421341483603138"
       }
     ],
     "projectFileMap": {
@@ -480,7 +480,7 @@
         },
         {
           "file": "apps/frontend/src/pages/Dashboard/Dashboard.tsx",
-          "hash": "4376047922686429916",
+          "hash": "8631425841200891042",
           "deps": [
             "npm:react"
           ]
