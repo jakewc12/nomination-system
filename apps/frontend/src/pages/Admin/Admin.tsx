@@ -39,7 +39,7 @@ const Admin: React.FC = () => {
     getData('https://nomination-system-3yub.onrender.com/api/nominations', setNominations);
   }, []);
   useEffect(() => {
-    getData('https://nomination-system-3yub.onrender.com/api/nominations', setApplications);
+    getData('https://nomination-system-3yub.onrender.com/api/applications', setApplications);
   }, []);
 
   if (!loggedIn) return <LoginForm setLoginStatus={setLoggedIn} />;
