@@ -237,7 +237,7 @@ const ApplicationForm: React.FC<Props> = ({
       pronouns: pronouns.join(', '),
     };
     console.log(JSON.stringify(formData))
-    fetch('https://nomination-system-3yub.onrender.com/api/applications', {
+    fetch('https://nomination-system-2.onrender.com/api/applications', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),

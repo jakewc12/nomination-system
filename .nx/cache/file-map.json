@@ -121,95 +121,506 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "dist/apps/frontend/assets/senate-logo-BYJFxGZ9.png",
-        "hash": "2516063478936773720"
-      },
-      {
-        "file": "dist/apps/backend/main.js",
-        "hash": "13751415512324797253"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "12333515226966617182"
-      },
-      {
-        "file": "vercel.json",
-        "hash": "16233110494981183886"
-      },
-      {
-        "file": "nx.json",
-        "hash": "14957606332241917186"
-      },
-      {
-        "file": "dist/apps/frontend/favicon.ico",
-        "hash": "9303420814833116677"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "596896521444264820"
-      },
-      {
-        "file": "dist/apps/frontend/assets/front-page-C1McrIHZ.jpg",
-        "hash": "14072507614827786677"
-      },
-      {
-        "file": "supabase/seed.sql",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "13725608138890048625"
-      },
-      {
-        "file": "supabase/.gitignore",
-        "hash": "11655384966607301079"
-      },
-      {
         "file": "dist/apps/frontend/assets/index-CE5fbKZb.js",
         "hash": "12896007136009009462"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "422339385275292376"
       },
       {
         "file": "yarn.lock",
         "hash": "12863658213540559044"
       },
       {
-        "file": "dist/apps/frontend/index.html",
-        "hash": "6836746682343834124"
-      },
-      {
-        "file": "dist/apps/frontend/logo.ico",
-        "hash": "9199744928180490563"
-      },
-      {
         "file": "supabase/config.toml",
         "hash": "3175116340987229256"
       },
       {
-        "file": "docker-compose.yml",
-        "hash": "15256933677204625888"
+        "file": "package-lock.json",
+        "hash": "422339385275292376"
+      },
+      {
+        "file": "dist/apps/frontend/assets/senate-logo-BYJFxGZ9.png",
+        "hash": "2516063478936773720"
+      },
+      {
+        "file": "supabase/seed.sql",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "dist/apps/frontend/favicon.ico",
+        "hash": "9303420814833116677"
+      },
+      {
+        "file": "supabase/.gitignore",
+        "hash": "11655384966607301079"
+      },
+      {
+        "file": "dist/apps/backend/main.js",
+        "hash": "13751415512324797253"
       },
       {
         "file": "package.json",
         "hash": "12806409510060805799"
       },
       {
-        "file": "README.md",
-        "hash": "7542981739487165903"
+        "file": "tsconfig.base.json",
+        "hash": "596896521444264820"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "15256933677204625888"
+      },
+      {
+        "file": "dist/apps/frontend/assets/front-page-C1McrIHZ.jpg",
+        "hash": "14072507614827786677"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14957606332241917186"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "13725608138890048625"
       },
       {
         "file": "dist/apps/backend/assets/.gitkeep",
         "hash": "3244421341483603138"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "vercel.json",
+        "hash": "16233110494981183886"
+      },
+      {
+        "file": "dist/apps/frontend/logo.ico",
+        "hash": "9199744928180490563"
+      },
+      {
+        "file": "README.md",
+        "hash": "7542981739487165903"
+      },
+      {
+        "file": "dist/apps/frontend/index.html",
+        "hash": "6836746682343834124"
       }
     ],
     "projectFileMap": {
+      "frontend": [
+        {
+          "file": "apps/frontend/.dockerignore",
+          "hash": "14192149844371224696"
+        },
+        {
+          "file": "apps/frontend/.env.example",
+          "hash": "10343505625435383976"
+        },
+        {
+          "file": "apps/frontend/.env.production",
+          "hash": "1434227443948077730"
+        },
+        {
+          "file": "apps/frontend/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/frontend/Dockerfile",
+          "hash": "6998076749236984342"
+        },
+        {
+          "file": "apps/frontend/index.html",
+          "hash": "7846072800252272348"
+        },
+        {
+          "file": "apps/frontend/project.json",
+          "hash": "18422926973042117542"
+        },
+        {
+          "file": "apps/frontend/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/frontend/public/logo.ico",
+          "hash": "9199744928180490563"
+        },
+        {
+          "file": "apps/frontend/src/app.tsx",
+          "hash": "4240081134229777484",
+          "deps": [
+            "npm:react-router-dom",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/assets/front-page.jpg",
+          "hash": "14072507614827786677"
+        },
+        {
+          "file": "apps/frontend/src/assets/senate-logo.png",
+          "hash": "2516063478936773720"
+        },
+        {
+          "file": "apps/frontend/src/components/ErrorPopUp/ErrorPopUp.tsx",
+          "hash": "5969302403109375729",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/ErrorPopUp/index.ts",
+          "hash": "16835621723762769963"
+        },
+        {
+          "file": "apps/frontend/src/components/ErrorPopUp/styles.tsx",
+          "hash": "16261125941422250978",
+          "deps": [
+            "npm:@mui/material",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/Footer/Footer.tsx",
+          "hash": "9703166710967438358",
+          "deps": [
+            "npm:mdb-react-ui-kit"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/Footer/index.ts",
+          "hash": "14786303919764291112"
+        },
+        {
+          "file": "apps/frontend/src/components/Navbar/Navbar.tsx",
+          "hash": "9427696295064091676",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/Navbar/constants.ts",
+          "hash": "2774286031412735788"
+        },
+        {
+          "file": "apps/frontend/src/components/Navbar/index.ts",
+          "hash": "11720350549982472034"
+        },
+        {
+          "file": "apps/frontend/src/components/Navbar/styles.tsx",
+          "hash": "17931156170994833062",
+          "deps": [
+            "npm:@mui/material",
+            "npm:react-router-dom",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/SubmitPopUp/SubmitPopUp.tsx",
+          "hash": "6674190424428545680",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/SubmitPopUp/index.ts",
+          "hash": "11129460264240055221"
+        },
+        {
+          "file": "apps/frontend/src/components/SubmitPopUp/styles.tsx",
+          "hash": "16261125941422250978",
+          "deps": [
+            "npm:@mui/material",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/forms/ApplicationForm/ApplicationForm.tsx",
+          "hash": "11268020283773606641",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material/Checkbox",
+            "npm:@mui/material/FormControl",
+            "npm:@mui/material/FormControlLabel",
+            "npm:@mui/material/Radio",
+            "npm:@mui/material/RadioGroup",
+            "npm:@mui/material/Button",
+            "npm:@mui/material",
+            "npm:@mui/material/MenuItem"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/forms/ApplicationForm/index.ts",
+          "hash": "8816623449695569314"
+        },
+        {
+          "file": "apps/frontend/src/components/forms/ApplicationForm/styles.tsx",
+          "hash": "14901423702974892209",
+          "deps": [
+            "npm:@mui/material",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/forms/LoginForm/LoginForm.tsx",
+          "hash": "6659325237692930777",
+          "deps": [
+            "npm:@mui/material",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/forms/LoginForm/index.ts",
+          "hash": "2114498224908584580"
+        },
+        {
+          "file": "apps/frontend/src/components/forms/LoginForm/styles.tsx",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/components/forms/NominationForm/NominationForm.tsx",
+          "hash": "17361119044268113163",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material/Button",
+            "npm:@mui/material/FormControl",
+            "npm:@mui/material/FormControlLabel",
+            "npm:@mui/material/MenuItem",
+            "npm:@mui/material/Radio",
+            "npm:@mui/material/RadioGroup",
+            "npm:@mui/material/TextField",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/forms/NominationForm/index.ts",
+          "hash": "3840465383509215587"
+        },
+        {
+          "file": "apps/frontend/src/components/forms/NominationForm/styles.tsx",
+          "hash": "7753140240411505305",
+          "deps": [
+            "npm:@mui/material",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/tables/AdminTable/AdminTable.tsx",
+          "hash": "1107705738375029740",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/tables/AdminTable/constants.ts",
+          "hash": "6837588539967171520"
+        },
+        {
+          "file": "apps/frontend/src/components/tables/AdminTable/index.ts",
+          "hash": "8698597605547664560"
+        },
+        {
+          "file": "apps/frontend/src/components/tables/AdminTable/styles.tsx",
+          "hash": "5682111368024117327",
+          "deps": [
+            "npm:@mui/material",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/components/tables/AdminTable/types.ts",
+          "hash": "7649657377175494096"
+        },
+        {
+          "file": "apps/frontend/src/main.tsx",
+          "hash": "17779882753671977098",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/pages/Admin/Admin.tsx",
+          "hash": "10109133998226473702",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/pages/Admin/index.ts",
+          "hash": "16548675356401963207"
+        },
+        {
+          "file": "apps/frontend/src/pages/Admin/styles.tsx",
+          "hash": "17412016043843220910",
+          "deps": [
+            "npm:@mui/material",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/pages/Applications/Applications.tsx",
+          "hash": "10514367893677567964",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/pages/Applications/constants.tx",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/pages/Applications/index.ts",
+          "hash": "5509930389198341391"
+        },
+        {
+          "file": "apps/frontend/src/pages/Applications/styles.tsx",
+          "hash": "11766330245720320158",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/pages/Applications/types.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/frontend/src/pages/Dashboard/Dashboard.tsx",
+          "hash": "16718067409792896568",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/pages/Dashboard/index.ts",
+          "hash": "12748528013595533474"
+        },
+        {
+          "file": "apps/frontend/src/pages/Dashboard/styles.tsx",
+          "hash": "4249984996764845586",
+          "deps": [
+            "npm:@mui/material",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/pages/Home/Home.spec.tsx",
+          "hash": "3557188504194772326",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/pages/Home/Home.tsx",
+          "hash": "9262008681097893642",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:react-icons"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/pages/Home/index.ts",
+          "hash": "16117244330736578688"
+        },
+        {
+          "file": "apps/frontend/src/pages/Login/Login.tsx",
+          "hash": "15275403459736941249",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/pages/Login/index.ts",
+          "hash": "3700973993253328362"
+        },
+        {
+          "file": "apps/frontend/src/pages/Login/styles.tsx",
+          "hash": "16001116909071314715",
+          "deps": [
+            "npm:@mui/material",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/pages/Nominations/Nominations.tsx",
+          "hash": "7456597881762175465",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/pages/Nominations/constants.ts",
+          "hash": "491453416328521819"
+        },
+        {
+          "file": "apps/frontend/src/pages/Nominations/index.ts",
+          "hash": "5343002546846851649"
+        },
+        {
+          "file": "apps/frontend/src/pages/Nominations/styles.tsx",
+          "hash": "11766330245720320158",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/pages/Nominations/types.ts",
+          "hash": "9095479166638573627"
+        },
+        {
+          "file": "apps/frontend/src/pages/NotFound/NotFound.tsx",
+          "hash": "10637827079491401069"
+        },
+        {
+          "file": "apps/frontend/src/pages/NotFound/index.ts",
+          "hash": "11945575064663386975"
+        },
+        {
+          "file": "apps/frontend/src/theme/index.ts",
+          "hash": "12246664062301602822"
+        },
+        {
+          "file": "apps/frontend/src/theme/mui.theme.ts",
+          "hash": "18388080634069459314",
+          "deps": [
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/utils.ts",
+          "hash": "14633427604074593440"
+        },
+        {
+          "file": "apps/frontend/tsconfig.app.json",
+          "hash": "7232119452847825095"
+        },
+        {
+          "file": "apps/frontend/tsconfig.json",
+          "hash": "11166545116916107487"
+        },
+        {
+          "file": "apps/frontend/tsconfig.spec.json",
+          "hash": "9472099605191632308"
+        },
+        {
+          "file": "apps/frontend/vite.config.ts",
+          "hash": "3786566035490919127",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
       "backend": [
         {
           "file": "apps/backend/.dockerignore",
@@ -428,417 +839,6 @@
           "deps": [
             "npm:@nx/webpack",
             "npm:path"
-          ]
-        }
-      ],
-      "frontend": [
-        {
-          "file": "apps/frontend/.dockerignore",
-          "hash": "14192149844371224696"
-        },
-        {
-          "file": "apps/frontend/.env.example",
-          "hash": "10343505625435383976"
-        },
-        {
-          "file": "apps/frontend/.env.production",
-          "hash": "1434227443948077730"
-        },
-        {
-          "file": "apps/frontend/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "apps/frontend/Dockerfile",
-          "hash": "6998076749236984342"
-        },
-        {
-          "file": "apps/frontend/index.html",
-          "hash": "7846072800252272348"
-        },
-        {
-          "file": "apps/frontend/project.json",
-          "hash": "18422926973042117542"
-        },
-        {
-          "file": "apps/frontend/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/frontend/public/logo.ico",
-          "hash": "9199744928180490563"
-        },
-        {
-          "file": "apps/frontend/src/app.tsx",
-          "hash": "4240081134229777484",
-          "deps": [
-            "npm:react-router-dom",
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/frontend/src/assets/front-page.jpg",
-          "hash": "14072507614827786677"
-        },
-        {
-          "file": "apps/frontend/src/assets/senate-logo.png",
-          "hash": "2516063478936773720"
-        },
-        {
-          "file": "apps/frontend/src/components/ErrorPopUp/ErrorPopUp.tsx",
-          "hash": "5969302403109375729",
-          "deps": [
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/ErrorPopUp/index.ts",
-          "hash": "16835621723762769963"
-        },
-        {
-          "file": "apps/frontend/src/components/ErrorPopUp/styles.tsx",
-          "hash": "16261125941422250978",
-          "deps": [
-            "npm:@mui/material",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/Footer/Footer.tsx",
-          "hash": "9703166710967438358",
-          "deps": [
-            "npm:mdb-react-ui-kit"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/Footer/index.ts",
-          "hash": "14786303919764291112"
-        },
-        {
-          "file": "apps/frontend/src/components/Navbar/Navbar.tsx",
-          "hash": "9427696295064091676",
-          "deps": [
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/Navbar/constants.ts",
-          "hash": "2774286031412735788"
-        },
-        {
-          "file": "apps/frontend/src/components/Navbar/index.ts",
-          "hash": "11720350549982472034"
-        },
-        {
-          "file": "apps/frontend/src/components/Navbar/styles.tsx",
-          "hash": "17931156170994833062",
-          "deps": [
-            "npm:@mui/material",
-            "npm:react-router-dom",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/SubmitPopUp/SubmitPopUp.tsx",
-          "hash": "6674190424428545680",
-          "deps": [
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/SubmitPopUp/index.ts",
-          "hash": "11129460264240055221"
-        },
-        {
-          "file": "apps/frontend/src/components/SubmitPopUp/styles.tsx",
-          "hash": "16261125941422250978",
-          "deps": [
-            "npm:@mui/material",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/forms/ApplicationForm/ApplicationForm.tsx",
-          "hash": "10882116968614685156",
-          "deps": [
-            "npm:react",
-            "npm:@mui/material/Checkbox",
-            "npm:@mui/material/FormControl",
-            "npm:@mui/material/FormControlLabel",
-            "npm:@mui/material/Radio",
-            "npm:@mui/material/RadioGroup",
-            "npm:@mui/material/Button",
-            "npm:@mui/material",
-            "npm:@mui/material/MenuItem"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/forms/ApplicationForm/index.ts",
-          "hash": "8816623449695569314"
-        },
-        {
-          "file": "apps/frontend/src/components/forms/ApplicationForm/styles.tsx",
-          "hash": "14901423702974892209",
-          "deps": [
-            "npm:@mui/material",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/forms/LoginForm/LoginForm.tsx",
-          "hash": "6659325237692930777",
-          "deps": [
-            "npm:@mui/material",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/forms/LoginForm/index.ts",
-          "hash": "2114498224908584580"
-        },
-        {
-          "file": "apps/frontend/src/components/forms/LoginForm/styles.tsx",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/frontend/src/components/forms/NominationForm/NominationForm.tsx",
-          "hash": "18093313193344828812",
-          "deps": [
-            "npm:react",
-            "npm:@mui/material/Button",
-            "npm:@mui/material/FormControl",
-            "npm:@mui/material/FormControlLabel",
-            "npm:@mui/material/MenuItem",
-            "npm:@mui/material/Radio",
-            "npm:@mui/material/RadioGroup",
-            "npm:@mui/material/TextField",
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/forms/NominationForm/index.ts",
-          "hash": "3840465383509215587"
-        },
-        {
-          "file": "apps/frontend/src/components/forms/NominationForm/styles.tsx",
-          "hash": "7753140240411505305",
-          "deps": [
-            "npm:@mui/material",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/tables/AdminTable/AdminTable.tsx",
-          "hash": "1107705738375029740",
-          "deps": [
-            "npm:react",
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/tables/AdminTable/constants.ts",
-          "hash": "6837588539967171520"
-        },
-        {
-          "file": "apps/frontend/src/components/tables/AdminTable/index.ts",
-          "hash": "8698597605547664560"
-        },
-        {
-          "file": "apps/frontend/src/components/tables/AdminTable/styles.tsx",
-          "hash": "5682111368024117327",
-          "deps": [
-            "npm:@mui/material",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/components/tables/AdminTable/types.ts",
-          "hash": "7649657377175494096"
-        },
-        {
-          "file": "apps/frontend/src/main.tsx",
-          "hash": "17779882753671977098",
-          "deps": [
-            "npm:react",
-            "npm:react-dom",
-            "npm:react-router-dom"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/pages/Admin/Admin.tsx",
-          "hash": "6910959980246829335",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/pages/Admin/index.ts",
-          "hash": "16548675356401963207"
-        },
-        {
-          "file": "apps/frontend/src/pages/Admin/styles.tsx",
-          "hash": "17412016043843220910",
-          "deps": [
-            "npm:@mui/material",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/pages/Applications/Applications.tsx",
-          "hash": "10514367893677567964",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/pages/Applications/constants.tx",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/frontend/src/pages/Applications/index.ts",
-          "hash": "5509930389198341391"
-        },
-        {
-          "file": "apps/frontend/src/pages/Applications/styles.tsx",
-          "hash": "11766330245720320158",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/pages/Applications/types.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/frontend/src/pages/Dashboard/Dashboard.tsx",
-          "hash": "4765637169416385450",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/pages/Dashboard/index.ts",
-          "hash": "12748528013595533474"
-        },
-        {
-          "file": "apps/frontend/src/pages/Dashboard/styles.tsx",
-          "hash": "4249984996764845586",
-          "deps": [
-            "npm:@mui/material",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/pages/Home/Home.spec.tsx",
-          "hash": "3557188504194772326",
-          "deps": [
-            "npm:@testing-library/react"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/pages/Home/Home.tsx",
-          "hash": "9262008681097893642",
-          "deps": [
-            "npm:react",
-            "npm:react-router-dom",
-            "npm:react-icons"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/pages/Home/index.ts",
-          "hash": "16117244330736578688"
-        },
-        {
-          "file": "apps/frontend/src/pages/Login/Login.tsx",
-          "hash": "15275403459736941249",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/pages/Login/index.ts",
-          "hash": "3700973993253328362"
-        },
-        {
-          "file": "apps/frontend/src/pages/Login/styles.tsx",
-          "hash": "16001116909071314715",
-          "deps": [
-            "npm:@mui/material",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/pages/Nominations/Nominations.tsx",
-          "hash": "7456597881762175465",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/pages/Nominations/constants.ts",
-          "hash": "491453416328521819"
-        },
-        {
-          "file": "apps/frontend/src/pages/Nominations/index.ts",
-          "hash": "5343002546846851649"
-        },
-        {
-          "file": "apps/frontend/src/pages/Nominations/styles.tsx",
-          "hash": "11766330245720320158",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/pages/Nominations/types.ts",
-          "hash": "9095479166638573627"
-        },
-        {
-          "file": "apps/frontend/src/pages/NotFound/NotFound.tsx",
-          "hash": "10637827079491401069"
-        },
-        {
-          "file": "apps/frontend/src/pages/NotFound/index.ts",
-          "hash": "11945575064663386975"
-        },
-        {
-          "file": "apps/frontend/src/theme/index.ts",
-          "hash": "12246664062301602822"
-        },
-        {
-          "file": "apps/frontend/src/theme/mui.theme.ts",
-          "hash": "18388080634069459314",
-          "deps": [
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "apps/frontend/src/utils.ts",
-          "hash": "14633427604074593440"
-        },
-        {
-          "file": "apps/frontend/tsconfig.app.json",
-          "hash": "7232119452847825095"
-        },
-        {
-          "file": "apps/frontend/tsconfig.json",
-          "hash": "11166545116916107487"
-        },
-        {
-          "file": "apps/frontend/tsconfig.spec.json",
-          "hash": "9472099605191632308"
-        },
-        {
-          "file": "apps/frontend/vite.config.ts",
-          "hash": "3786566035490919127",
-          "deps": [
-            "npm:vite",
-            "npm:@vitejs/plugin-react",
-            "npm:@nx/vite"
           ]
         }
       ]

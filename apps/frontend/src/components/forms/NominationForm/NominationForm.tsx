@@ -134,7 +134,7 @@ const NominationForm: React.FC<Props> = ({ setIsPopupOpen, setErrorMessage, setE
       receiveSenatorInfo,
     };
 
-    fetch('https://nomination-system-3yub.onrender.com/api/nominations', {
+    fetch('https://nomination-system-2.onrender.com/api/nominations', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formValues),
