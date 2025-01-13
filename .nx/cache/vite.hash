@@ -1,432 +1,66 @@
 {
-  "5824824926970736106": {
-    "build": {
-      "command": "vite build",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production",
-        {
-          "externalDependencies": [
-            "vite"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/dist/apps/frontend"
-      ]
-    },
-    "serve": {
-      "command": "vite serve",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "preview": {
-      "command": "vite preview",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "serve-static": {
-      "executor": "@nx/web:file-server",
-      "options": {
-        "buildTarget": "build"
-      }
-    },
-    "test": {
-      "command": "vitest run",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "inputs": [
-        "default",
-        "^production",
-        {
-          "externalDependencies": [
-            "vitest"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/frontend"
-      ]
-    }
-  },
-  "13791130043978023325": {
-    "build": {
-      "command": "vite build",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production",
-        {
-          "externalDependencies": [
-            "vite"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/dist/apps/frontend"
-      ]
-    },
-    "serve": {
-      "command": "vite serve",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "preview": {
-      "command": "vite preview",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "serve-static": {
-      "executor": "@nx/web:file-server",
-      "options": {
-        "buildTarget": "build"
-      }
-    },
-    "test": {
-      "command": "vitest run",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "inputs": [
-        "default",
-        "^production",
-        {
-          "externalDependencies": [
-            "vitest"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/frontend"
-      ]
-    }
-  },
-  "17261381376779074963": {
-    "build": {
-      "command": "vite build",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production",
-        {
-          "externalDependencies": [
-            "vite"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/dist/apps/frontend"
-      ]
-    },
-    "serve": {
-      "command": "vite serve",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "preview": {
-      "command": "vite preview",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "serve-static": {
-      "executor": "@nx/web:file-server",
-      "options": {
-        "buildTarget": "build"
-      }
-    },
-    "test": {
-      "command": "vitest run",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "inputs": [
-        "default",
-        "^production",
-        {
-          "externalDependencies": [
-            "vitest"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/frontend"
-      ]
-    }
-  },
-  "5789328758084834354": {
-    "build": {
-      "command": "vite build",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production",
-        {
-          "externalDependencies": [
-            "vite"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/dist/apps/frontend"
-      ]
-    },
-    "serve": {
-      "command": "vite serve",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "preview": {
-      "command": "vite preview",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "serve-static": {
-      "executor": "@nx/web:file-server",
-      "options": {
-        "buildTarget": "build"
-      }
-    },
-    "test": {
-      "command": "vitest run",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "inputs": [
-        "default",
-        "^production",
-        {
-          "externalDependencies": [
-            "vitest"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/frontend"
-      ]
-    }
-  },
-  "18002454725106572485": {
-    "build": {
-      "command": "vite build",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production",
-        {
-          "externalDependencies": [
-            "vite"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/dist/apps/frontend"
-      ]
-    },
-    "serve": {
-      "command": "vite serve",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "preview": {
-      "command": "vite preview",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "serve-static": {
-      "executor": "@nx/web:file-server",
-      "options": {
-        "buildTarget": "build"
-      }
-    },
-    "test": {
-      "command": "vitest run",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "inputs": [
-        "default",
-        "^production",
-        {
-          "externalDependencies": [
-            "vitest"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/frontend"
-      ]
-    }
-  },
-  "3510489426048677055": {
-    "build": {
-      "command": "vite build",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production",
-        {
-          "externalDependencies": [
-            "vite"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/dist/apps/frontend"
-      ]
-    },
-    "serve": {
-      "command": "vite serve",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "preview": {
-      "command": "vite preview",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "serve-static": {
-      "executor": "@nx/web:file-server",
-      "options": {
-        "buildTarget": "build"
-      }
-    },
-    "test": {
-      "command": "vitest run",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "inputs": [
-        "default",
-        "^production",
-        {
-          "externalDependencies": [
-            "vitest"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/frontend"
-      ]
-    }
-  },
-  "10896187720371797795": {
-    "build": {
-      "command": "vite build",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production",
-        {
-          "externalDependencies": [
-            "vite"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/dist/apps/frontend"
-      ]
-    },
-    "serve": {
-      "command": "vite serve",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "preview": {
-      "command": "vite preview",
-      "options": {
-        "cwd": "apps/frontend"
-      }
-    },
-    "serve-static": {
-      "executor": "@nx/web:file-server",
-      "options": {
-        "buildTarget": "build"
-      }
-    },
-    "test": {
-      "command": "vitest run",
-      "options": {
-        "cwd": "apps/frontend"
-      },
-      "cache": true,
-      "inputs": [
-        "default",
-        "^production",
-        {
-          "externalDependencies": [
-            "vitest"
-          ]
-        }
-      ],
-      "outputs": [
-        "{workspaceRoot}/coverage/apps/frontend"
-      ]
-    }
-  },
   "3159612649749230544": {
+    "build": {
+      "command": "vite build",
+      "options": {
+        "cwd": "apps/frontend"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "production",
+        "^production",
+        {
+          "externalDependencies": [
+            "vite"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/dist/apps/frontend"
+      ]
+    },
+    "serve": {
+      "command": "vite serve",
+      "options": {
+        "cwd": "apps/frontend"
+      }
+    },
+    "preview": {
+      "command": "vite preview",
+      "options": {
+        "cwd": "apps/frontend"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build"
+      }
+    },
+    "test": {
+      "command": "vitest run",
+      "options": {
+        "cwd": "apps/frontend"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "vitest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/frontend"
+      ]
+    }
+  },
+  "7860522362582663266": {
     "build": {
       "command": "vite build",
       "options": {
