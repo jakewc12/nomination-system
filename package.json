@@ -8,7 +8,7 @@
     "start": "nx run-many -t start -p frontend backend"
   },
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "private": true,
   "dependencies": {
