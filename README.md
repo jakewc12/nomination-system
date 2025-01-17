@@ -37,7 +37,7 @@ Prerequisites: make sure everything is installed
 First, clone the repo and `cd` into the directory
 
 ```bash
-git clone https://github.com/SGAOperationalAffairs/nomination-system.git
+git clone https://github.com/jakewc12/nomination-system.git
 cd nomination-system
 ```
 
