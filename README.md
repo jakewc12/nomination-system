@@ -87,4 +87,5 @@ The frontend will be at http://localhost:4200/ and the backend will be at http:/
 - [ ] Standardize styling with general style guide and usage (colors as well), potentially use styling library like tailwind?
 - [ ] Fix spacing in applications and nominations forms
 - [ ] Make the website look good on mobile
+- [ ] Use a local/dev database as well as prod database
 
