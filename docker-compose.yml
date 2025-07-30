@@ -1,0 +1,29 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: apps/frontend/Dockerfile
+    image: jakewc1212/frontend:latest
+    ports:
+      - "4200:80"
+    env_file: 
+      - apps/frontend/.env
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: .
+      dockerfile: apps/backend/Dockerfile
+    image: jakewc1212/backend:latest
+    ports:
+      - "3000:3000"
+    env_file: 
+      - apps/backend/.env
+    networks:
+      - app-network
+
+networks:
+  app-network:
