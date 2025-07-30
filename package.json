@@ -2,7 +2,11 @@
   "name": "@nomination-system/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "nx run-many -t serve -p frontend backend",    
+    "build": "nx run-many -t build -p frontend backend",
+    "start": "nx run-many -t start -p frontend backend" 
+  },
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
