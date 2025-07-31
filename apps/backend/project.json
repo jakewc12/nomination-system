@@ -8,9 +8,7 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "backend:build",
-        "outputPath": "dist/apps/backend",
-        "outputFileName": "main.js"
+        "buildTarget": "backend:build"
       },
       "configurations": {
         "development": {
