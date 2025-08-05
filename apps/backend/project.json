@@ -8,8 +8,7 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "backend:build",
-        "main": "apps/backend/src/main.ts"
+        "buildTarget": "backend:build"
       },
       "configurations": {
         "development": {
