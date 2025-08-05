@@ -5,20 +5,21 @@
   "projectType": "application",
   "targets": {
     "serve": {
-      "executor": "@nx/js:node",
-      "defaultConfiguration": "development",
-      "options": {
-        "buildTarget": "backend:build"
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "backend:build:development"
-        },
-        "production": {
-          "buildTarget": "backend:build:production"
-        }
-      }
-    }
+  "executor": "nx:run-commands",
+  "options": {
+    "command": "node dist/apps/backend/src/main.js"
+  }
+},
+"build": {
+  "executor": "@nx/js:tsc",
+  "outputs": ["{options.outputPath}"],
+  "options": {
+    "outputPath": "dist/apps/backend",
+    "main": "apps/backend/src/main.ts",
+    "tsConfig": "apps/backend/tsconfig.app.json",
+    "assets": []
+  }
+}
   },
   "tags": []
 }

@@ -24,7 +24,7 @@ async function bootstrap() {
     );
 
     console.log("process port", process.env.PORT);
-    const port = Number(process.env.PORT);
+    const port = Number(process.env.PORT) | 3000;
     console.log("NODE_ENV:", process.env.NODE_ENV);
     console.log("PORT:", process.env.PORT);
     if (!port) {
