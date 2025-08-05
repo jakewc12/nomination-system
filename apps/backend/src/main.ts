@@ -23,11 +23,20 @@ async function bootstrap() {
       })
     );
 
-    const port = process.env.PORT || 3000;
+    console.log("process port", process.env.PORT);
+    const port = Number(process.env.PORT);
+    console.log("NODE_ENV:", process.env.NODE_ENV);
+    console.log("PORT:", process.env.PORT);
+    if (!port) {
+      throw new Error(
+        "❌ process.env.PORT is undefined – required in production (e.g., Render)"
+      );
+    }
     await app.listen(port, "0.0.0.0");
 
+    console.log(`started listening on http://0.0.0.0:${port}/${globalPrefix}`);
     Logger.log(
-      `🚀 Application is running on: http://localhost:${port}/${globalPrefix}`
+      `🚀 Application is running on: http://0.0.0.0:${port}/${globalPrefix}`
     );
   } catch (error) {
     console.error("❌ Error during app bootstrap:", error);
